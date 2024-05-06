@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire 2</title>
+</head>
+<body>
+    <h1>Salom bien etre</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Client</legend>
+            <p>
+                <input type="text" class="nom" name="nom" placeholder="Nom" autofocus>
+            </p>
+            <p>
+                <input type="text" class="nom" name="prenom" placeholder="Prenom">
+            </p>
+            <p>
+                <input type="tel" name="tel" class="tel" placeholder="Tel">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>RDV</legend>
+            <p>
+                <input type="date" name="date" class="date">
+            </p>
+            <p>
+                <label for="heure">Heures :</label> <br/>
+                <select name="heure" id="heure">
+                    <option value="09:00">09:00</option>
+                    <option value="12:00">12:00</option>
+                </select>
+            </p>
+            <p>
+                <label for="intervenant">Intervenant :</label> <br/>
+                <input type="radio" name="intervenant" value="Celine" checked/> Celine
+                <input type="radio" name="intervenant" value="Marie"/> Marie
+                <input type="radio" name="intervenant" value="Lucine"/> Lucine
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Entre le RDV"/>
+        </p>
+    </form>
+</body>
+</html>

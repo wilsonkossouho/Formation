@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    margin: 0;
+    padding:0;
+    background-color: #f3f3f3;
+    font-family: arial;
+    font-size: 19px;
+}
+nav {
+    background-color: #dbdbdb;
+    padding: 30px;
+    text-align: right;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.menu li {
+    display: inline;
+    margin-left: 22px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #039;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.menu li a:hover {
+    color: #09f;
+    transition: 0.5s;
+}
+.voir-menu, .cacher-menu, #check {
+    display: none;
+}
+section {
+    margin-bottom: 30px;
+}
+section img {
+    width: 100%;
+}
+.resume, article {
+    width: 85%;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 35px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 3px 3px 9px #ddd;
+}
+article {
+    height: auto;
+}
+article img {
+    float: right;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+article h2 {
+    text-align: center;
+    letter-spacing: 4px;
+}
+.resume h2 {
+    text-align: center;
+    color: #933;
+}
+.resume p, article p {
+    text-align: justify;
+    text-indent: 50px;
+}
+.resume p:last-child {
+    display: inline;
+    background-color: #f90;
+    padding: 5px 25px;
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #933;
+    letter-spacing: 5px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.7s;
+}
+a:hover {
+    color: #fff;
+    transition: 0.7s;
+}
+.ronde {
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.rond-versailles {
+    background-image: url(../images/chateau-versailles.jpg);
+}
+.rond-chambord {
+    background-image: url(../images/chateau-chambord.jpg);
+}
+footer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+@media screen and (max-width: 950px) {
+    .voir-menu, .cacher-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .cacher-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .voir-menu:hover, .cacher-menu:hover {
+        color: #666;
+        transition: 0.5s;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #dbdbdb;
+        height: 100vh;
+        width: 100%;
+        transition: 0.7s;
+        padding-top: 80px;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ccc;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .ronde {
+        width: 65%;
+        border-radius: 50px;
+        float: none;
+        margin-right: 0;
+    }
+    .resume, article {
+        height: auto;
+        text-align: center;
+    }
+    article img {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;  
+        width: 100%; 
+        max-width: 450px;
+    }
+}

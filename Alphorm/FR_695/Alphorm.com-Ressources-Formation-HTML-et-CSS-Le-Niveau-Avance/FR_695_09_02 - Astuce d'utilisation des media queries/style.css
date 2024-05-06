@@ -1,0 +1,33 @@
+body {
+    background-color: #f00;
+}
+div {
+    width: 900px;
+    height: 500px;
+    background-color: #ff0;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-color: #00f;
+    }  
+    div{
+        width: 80%;
+        background-color: #fff;
+    }    
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #000;
+    } 
+    /*div{
+        width: 80%;
+        background-color: #fff;
+        height: 200px;
+    }  */
+}

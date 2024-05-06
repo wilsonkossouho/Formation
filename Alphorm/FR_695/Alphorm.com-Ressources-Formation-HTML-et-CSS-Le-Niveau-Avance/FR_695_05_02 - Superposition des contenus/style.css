@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding:0;
+}
+section {
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    border: 2px dashed black;
+    margin: auto;
+    position: relative;
+}
+#box {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

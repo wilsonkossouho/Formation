@@ -1,0 +1,16 @@
+#box {
+    width: 450px;
+    
+    background-color: #f3f3f3;
+    box-shadow: -10px -25px 15px #aaa inset;
+    padding: 10px;
+    border-radius: 25px;
+  
+}
+
+img {
+    width: 110px;
+    float: right;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}

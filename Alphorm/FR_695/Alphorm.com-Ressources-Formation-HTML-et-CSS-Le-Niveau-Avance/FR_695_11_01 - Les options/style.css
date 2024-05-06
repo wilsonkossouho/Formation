@@ -1,0 +1,8 @@
+.titre1 {
+    text-align: center;
+    color: red;
+    font-family: arial;
+    font-size: 22px;
+    /*animation-duration: 4s;*/
+    animation-delay: 2s;
+}
